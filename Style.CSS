@@ -49,6 +49,7 @@ html body{
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover  {
   background-color: green;
+  cursor: pointer;
 }
 div ul{
     display:inline;
@@ -62,6 +63,9 @@ div li{
     display:inline;
     
     padding: 16px 24px;
+}
+nav{
+  display:inline;
 }
 .alert {
   padding: 20px;
