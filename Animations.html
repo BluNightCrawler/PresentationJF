@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <link href="Style.CSS" rel="StyleSheet" src=Style.CSS>
+  <link href="demo.js" rel="JavaScript" src=demo.js>
+    <title>Animation</title>
+    <style>
+        p{
+            border: brown 2px dotted ;
+        }
+        #div1{
+            width: 100px;
+            height: 100px;
+            float: left;
+            background-color: rgba(10, 10, 160, 0.644);
+            position: relative;
+            animation-name: RunAway;
+            animation-duration: 10s;
+            z-index: -1;
+            animation-delay: 4s;
+            animation-iteration-count: 4;
+            animation-direction: alternate;
+        }
+        #div2{
+            float: right;
+            width:100px;
+            height: 100px;
+            background-color:forestgreen;
+            position: relative;
+            animation-name: Clash;
+            animation-duration: 10s;
+            z-index: -1;
+            animation-delay: 4s;
+            animation-iteration-count: 4;
+            animation-direction: alternate;
+
+        }
+        @keyframes Clash{
+            0%{background-color:rgba(0, 128, 0, 0.616);right:0px;top:0px;}
+            25%{background-color:rgba(0, 0, 255, 0.486);right:0px;top:250px;}
+            50%{background-color:rgba(255, 255, 0, 0.288);right:250px/width;top:0px;}
+            75%{background-color:rgba(255, 68, 0, 0.267);right:250px;top:250px;}
+            100%{background-color:rgb(0, 128, 0);right:0px;top:0px;}
+       
+        }
+        @keyframes RunAway{
+            0%{background-color:rgba(0, 0, 255, 0.637);left:0px;top:0px;}
+            25%{background-color:rgba(255, 255, 0, 0.486);left:0px;top:250px;}
+            50%{background-color:rgba(255, 68, 0, 0.24);left:250px;top:0px;}
+            75%{background-color:rgba(0, 128, 0, 0.342);left:250px;top:250px;}
+            100%{background-color:rgb(0, 0, 255);left:0px;top:0px;}
+        }
+        
+        #Spawn{
+            width:150px;
+            height: 100px;
+            transform:translate(150px,100px);
+        }
+        #placement{
+            width:150px;
+            height:100px;
+            border: 1px solid rgb(230, 13, 13);      }
+        #rotate{
+            transform:rotate(45deg);
+        }
+        #Stretch{
+            margin: 150px;
+  transform: scale(2,3);
+        }
+        #Scaling{
+            text-align: center;
+            transform: scaleX(5);
+            transform: scaleY(2);
+            
+        }
+        #SkewX{
+            transform: skew(45deg,8deg);
+            
+        }
+        #Matrix{
+            transform: matrix(1,-0.3,0,1,1,2);
+        }
+    </style>
+    <script>
+
+    </script>
+    
+    <h1>Animations</h1>
+    <h3>moving objects</h3>
+    <p>I am trying to make some keyframes for movemnt and changing colors.
+        2D animations and 3D animation are going to be in this page.
+    </p>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <br>
+    <h3>This Is 2d Animation</h3>
+    <div id="placement"> <div id="Spawn">placement can I get it to be random? The red box is where it should be.</div></div>
+    <br>
+    <div id="rotate">Turning sideways</div>
+    <br>
+    <div id="Stretch">Hello may be strecthy</div>
+    <br>
+    <div id="Scaling">This is Scaling</div>
+    <br>
+    <div id="SkewX">Hello this is Skewing Both X and Y</div>
+    <br>
+    <div id="SkewY">Hello this is Skewing Y</div>
+    <br>
+    <div id="Matrix">Matrix is real</div>
+
+
+
+
+</html>
