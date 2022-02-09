@@ -25,7 +25,7 @@ var _mouse;
 function init(){
     _img = new Image();
     _img.addEventListener('load',onImage,false);
-    _img.src="image/Nightcrawler.jpg";
+    _img.src="images/Nightcrawler.jpg";
     alert(_img.src);
 }
 function onImage(e){

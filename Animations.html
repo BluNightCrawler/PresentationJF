@@ -15,7 +15,7 @@
             position: relative;
             animation-name: RunAway;
             animation-duration: 10s;
-            z-index: -1;
+            z-index: -4;
             animation-delay: 4s;
             animation-iteration-count: 4;
             animation-direction: alternate;
@@ -28,7 +28,7 @@
             position: relative;
             animation-name: Clash;
             animation-duration: 10s;
-            z-index: -1;
+            z-index: -4;
             animation-delay: 4s;
             animation-iteration-count: 4;
             animation-direction: alternate;
@@ -51,12 +51,12 @@
         }
         
         #Spawn{
-            width:150px;
+            width:200px;
             height: 100px;
-            transform:translate(150px,100px);
+            transform:translate(250px,-25px);
         }
         #placement{
-            width:150px;
+            width:200px;
             height:100px;
             border: 1px solid rgb(230, 13, 13);      }
         #rotate{
@@ -79,11 +79,34 @@
         #Matrix{
             transform: matrix(1,-0.3,0,1,1,2);
         }
+        #grid{
+            display:grid;
+            border: 1px green dotted;
+            grid-template-columns: 10% 40% 40% 10%;
+            
+            }
+        grid{
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
     </style>
     <script>
 
     </script>
-    
+    <nav class="border-black full-grid">
+    <a href="index.html" class="dropbtn">Home</a>
+    <div class="dropdown-content">
+      <a href="#First">Sports</a>
+          <a>Programming</a>
+          <a>Schooling</a>
+    </div>
+    <a href="portfoilo.html">Portfolio</a>
+    <a href="MyGoals.html">My Goals</a>
+    <a href="puzzle.html">Puzzle</a>
+    <a href="Animations.html">Animations</a>
+    <a href="AboutMe.html">Learn More</a>
+    <a href="ThankYou.html">Thank You</a>
+  </nav>  
     <h1>Animations</h1>
     <h3>moving objects</h3>
     <p>I am trying to make some keyframes for movemnt and changing colors.
@@ -91,22 +114,36 @@
     </p>
     <div id="div1"></div>
     <div id="div2"></div>
-    <br>
-    <h3>This Is 2d Animation</h3>
-    <div id="placement"> <div id="Spawn">placement can I get it to be random? The red box is where it should be.</div></div>
-    <br>
-    <div id="rotate">Turning sideways</div>
-    <br>
-    <div id="Stretch">Hello may be strecthy</div>
-    <br>
-    <div id="Scaling">This is Scaling</div>
-    <br>
-    <div id="SkewX">Hello this is Skewing Both X and Y</div>
-    <br>
-    <div id="SkewY">Hello this is Skewing Y</div>
-    <br>
-    <div id="Matrix">Matrix is real</div>
+    <br><pre>
 
+
+
+
+    </pre>
+    <br><div id="placement"> <div id="Spawn">The red box is where the words should be placed.</div></div>
+    <pre>
+
+
+
+
+    </pre>
+    <div id="grid">
+        <grid>
+    <h3>This Is 2d Animation</h3>
+    
+    <div id="rotate">Turning sideways</div></p>
+    
+    <p><div id="Stretch">Hello may be strecthy</div></p>
+    
+    <p><div id="Scaling">This is Scaling</div></p>
+    
+    <p><div id="SkewX">Hello this is Skewing Both X and Y</div></p>
+    
+    <p><div id="SkewY">Hello this is Skewing Y</div></p>
+    
+    <p><div id="Matrix">Matrix is real</div></p>
+     </grid>   
+</div>
 
 
 
