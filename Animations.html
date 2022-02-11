@@ -15,7 +15,7 @@
             position: relative;
             animation-name: RunAway;
             animation-duration: 10s;
-            z-index: -4;
+            z-index: 1;
             animation-delay: 4s;
             animation-iteration-count: 4;
             animation-direction: alternate;
@@ -28,7 +28,7 @@
             position: relative;
             animation-name: Clash;
             animation-duration: 10s;
-            z-index: -4;
+            z-index: 1;
             animation-delay: 4s;
             animation-iteration-count: 4;
             animation-direction: alternate;
@@ -37,45 +37,46 @@
         @keyframes Clash{
             0%{background-color:rgba(0, 128, 0, 0.616);right:0px;top:0px;}
             25%{background-color:rgba(0, 0, 255, 0.486);right:0px;top:250px;}
-            50%{background-color:rgba(255, 255, 0, 0.288);right:250px/width;top:0px;}
-            75%{background-color:rgba(255, 68, 0, 0.267);right:250px;top:250px;}
+            50%{background-color:rgba(255, 255, 0, 0.288);right:50%;top:0px;}
+            75%{background-color:rgba(255, 68, 0, 0.267);right:50%;top:250px;}
             100%{background-color:rgb(0, 128, 0);right:0px;top:0px;}
        
         }
         @keyframes RunAway{
             0%{background-color:rgba(0, 0, 255, 0.637);left:0px;top:0px;}
             25%{background-color:rgba(255, 255, 0, 0.486);left:0px;top:250px;}
-            50%{background-color:rgba(255, 68, 0, 0.24);left:250px;top:0px;}
-            75%{background-color:rgba(0, 128, 0, 0.342);left:250px;top:250px;}
+            50%{background-color:rgba(255, 68, 0, 0.24);left:50%;top:0px;}
+            75%{background-color:rgba(0, 128, 0, 0.342);left:50%;top:250px;}
             100%{background-color:rgb(0, 0, 255);left:0px;top:0px;}
         }
         
         #Spawn{
             width:200px;
             height: 100px;
-            transform:translate(250px,-25px);
+            transform:translate(200px,10px);
         }
         #placement{
             width:200px;
             height:100px;
             border: 1px solid rgb(230, 13, 13);      }
         #rotate{
-            transform:rotate(45deg);
+            transform:rotate(-45deg);
         }
         #Stretch{
-            margin: 150px;
+            margin: 100px;
   transform: scale(2,3);
         }
         #Scaling{
             text-align: center;
-            transform: scaleX(5);
-            transform: scaleY(2);
+            transform: scaleX(10);
+            transform: scaleY(.5);
             
         }
         #SkewX{
-            transform: skew(45deg,8deg);
+            transform: skew(-40deg,10deg);
             
         }
+        
         #Matrix{
             transform: matrix(1,-0.3,0,1,1,2);
         }
@@ -85,10 +86,7 @@
             grid-template-columns: 10% 40% 40% 10%;
             
             }
-        grid{
-            grid-column-start: 2;
-            grid-column-end: 3;
-        }
+        
     </style>
     <script>
 
@@ -109,7 +107,7 @@
   </nav>  
     <h1>Animations</h1>
     <h3>moving objects</h3>
-    <p>I am trying to make some keyframes for movemnt and changing colors.
+    <p class="animation">I am trying to make some keyframes for movemnt and changing colors.
         2D animations and 3D animation are going to be in this page.
     </p>
     <div id="div1"></div>
@@ -119,32 +117,46 @@
 
 
 
-    </pre>
-    <br><div id="placement"> <div id="Spawn">The red box is where the words should be placed.</div></div>
-    <pre>
+    
 
 
 
 
     </pre>
-    <div id="grid">
-        <grid>
-    <h3>This Is 2d Animation</h3>
+    <div class="Article">
+        <div class="container2" style="grid-column-start: 2;">
+    <h3>2d Animation</h3>
+    <h3>3d Animations</h3>
+
+    <div id="placement"> <div id="Spawn">The red box is where the words should be placed.</div></div>
+    <p></p>
     
-    <div id="rotate">Turning sideways</div></p>
+    <div id="rotate">Turning sideways</div>
+    <p></p>
     
-    <p><div id="Stretch">Hello may be strecthy</div></p>
+    <div id="Stretch">Hello may be strecthy</div>
+    <p></p>
     
-    <p><div id="Scaling">This is Scaling</div></p>
+    <div id="Scaling">This is Scaling</div>
+    <p></p>
     
-    <p><div id="SkewX">Hello this is Skewing Both X and Y</div></p>
-    
-    <p><div id="SkewY">Hello this is Skewing Y</div></p>
-    
-    <p><div id="Matrix">Matrix is real</div></p>
-     </grid>   
+    <div id="SkewX">Hello this is Skewing Both X and Y</div>
+    <p></p>
+        
+    <div id="Matrix">Matrix is real</div>
+    <p></p>
+      
 </div>
-
-
+</div>
+<br><br><br>
+<footer>
+  <h4 class="enjoy-css">FOOTER LINKS<br><h2>
+  <a href= alt=link target="_blank"> Hiring Now </a>
+  <br>
+  <a href= alt=link target="_blank">Resources</a>
+  <br><a href="#"><u>back to the top</u></a>
+  <div style="color:white; border-bottom:1px solid #eee; text-align:center;" > G O &nbsp; C O D E &copy; 2 0 2 2 </div>
+  
+  </footer>
 
 </html>

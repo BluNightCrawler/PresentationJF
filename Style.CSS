@@ -1,7 +1,7 @@
 
 *{
   padding: 2px;
-  margin: 0px;
+  margin: 5px;
   box-sizing: border-box;
 
 }
@@ -179,13 +179,26 @@ height: 20px;
 .closebtn:hover {
   color: black;
 }
+.Article{
+  display:grid;
+  grid-template-columns: 10% auto 20%;
+  
+  
+}
 .container{
   display:grid;
+  grid-column-start: 2;
+  height: 400px;
   grid-template-columns: 35% 35% 35% ;  
-  max-width: 75%;
+  max-width: auto;
 
 }
-div p {
+.container2{
+  display:grid;
+  grid-column-start: 2;
+  grid-template-columns: 50% 50% ;
+}
+.animation {
   
   width:flex;
   height:flex;
