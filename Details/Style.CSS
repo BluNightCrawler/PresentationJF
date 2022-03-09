@@ -211,6 +211,49 @@ height: 20px;
   from{background-color: blue;}
   to{background-color: purple;}
 }
+.border-black{
+    border: 1px purple solid;
+}
+
+#full-grid{
+    display: grid;
+    width: 100%;
+}
+#full-articles{
+    display: grid;
+    grid-template-columns: auto minmax(700px, 80%) auto;
+}
+article{
+  background-color: white;
+  grid-column-start: 2;
+  border: 3px solid black;
+  height: auto;
+  margin: 10px 3px;
+  padding: 15px;
+  border-radius: 3px;
+  color: black;
+  box-shadow: -5px 5px 5px blue;
+}
+article h4{
+  color: purple;
+  font-size: 3rem;
+}
+article p{
+  border: 3px dotted black;
+}
+input{
+  background-color: blue;
+  color:aqua;
+  width: 50px;
+  height:40px;
+  float: right; 
+   
+}
+input:hover{
+  cursor: pointer;
+  background-color: green;
+}
+
 
 
 

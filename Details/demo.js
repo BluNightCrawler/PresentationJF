@@ -244,3 +244,4 @@ var loop = function(){
 }
 loop();
 
+//New Javscript Ideas
