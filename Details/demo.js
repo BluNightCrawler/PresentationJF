@@ -1,38 +1,38 @@
 /*you can make this be any event*/
-window.Onload=function fun(alert){
-    alert("Hello World")
-}
-alert("Hello World")
+
 document.GetElementByID("demo").innerHTML = "HEllo Javascript"
 
 /* This the puzzle code/* dfadsf */ 
-const Puzzle_Diffculty = 4;
+// const Puzzle_Diffculty = 4;
 const PUZZLE_HOVER_TINT = '#009900';
-var _canvas;
-var _stage;
 
-var _img;
-var _pieces;
-var _puzzleWidth;
-var _puzzleHeight;
-var _pieceWidth;
-var _pieceHeight;
-var _currentPiece;
-var _currentDropPiece;
+const canvas = document.querySelector('#canvas');
+const stage = canvas.getContext("2d");
+const img = new img();
 
-var _mouse;
+let diffculty = 4;
+let pieces;
+let puzzleWidth;
+let puzzleHeight;
+let pieceWidth;
+let pieceHeight;
+let currentPiece;
+let currentDropPiece;
 
-function init(){
-    _img = new Image();
-    _img.addEventListener('load',onImage,false);
-    _img.src="images/Nightcrawler.jpg";
-    alert(_img.src);
-}
+
+let mouse;
+
+
+img.addEventListener('load',onImage,false);
+img.src="https://asyncbanana.github.io/html5-canvas-puzzle/mke.jpg";
+
+
+
 function onImage(e){
-    _pieceWidth=Math.floor(_img.width/Puzzle_Diffculty);
-    _pieceHeight=Math.floor(_img.height/Puzzle_Diffculty);
-    _puzzleWidth=_pieceWidth*Puzzle_Diffculty;
-    _puzzleHeight=_pieceHeight*Puzzle_Diffculty;
+    pieceWidth=Math.floor(img.width/diffculty);
+    pieceHeight=Math.floor(img.height/diffculty);
+    puzzleWidth=pieceWidth*diffculty;
+    puzzleHeight=pieceHeight*diffculty;
     setCanvas();
     initPuzzle();
 }
